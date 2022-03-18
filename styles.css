@@ -54,6 +54,7 @@ h1 {
 	text-align: center;
 	user-select: none;  
 	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
 
 	line-height: 45px;
 	width: 100vh;
