@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: bold 2rem Arial, sans-serif;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.6);
+}
+
+.container > input {
+	font-size: 1rem;
+	padding: 4vh;
+	width: 50%;
+}
+
+  
+h1 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 17px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	user-select: none;  
+	transition: all 0.3s ease;
+
+	line-height: 45px;
+	width: 100vh;
+	height: 25vh;
+	font-size: 120%;
+}
+
+.go {
+	background: #f803a6;
+	box-shadow: 0px 18px #6b114c;
+	color: white;
+}
+  
+.go:hover {
+	box-shadow: 0px 18px #490230;
+	border: 3px solid black;
+}
+  
+.go:active {
+	top: 14px;
+	box-shadow: 0.5px 0.5px #d3545d;
+}
+
+.rainbow {
+	background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+	background-size: 1200% 1200%;
+	-webkit-animation: rainbow 30s ease infinite;
+	animation: rainbow 30s ease infinite;
+}
+
+.rainbow-hard {
+	background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+	background-size: 1200% 1200%;
+	-webkit-animation: rainbow 2s infinite;
+	animation: rainbow 2s infinite;
+}
+
+@-webkit-keyframes rainbow {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes rainbow {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
